@@ -5,5 +5,8 @@ Imprimir el mensaje de error que se genera por pantalla.
 
 def main():
     lista = [1, 2, 3, 4, 5]
+  try:
     print(lista[10])
+  except indexError as e:
+    print('Se generó una excepción: ', e)
 main()
